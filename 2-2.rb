@@ -1,4 +1,12 @@
-input = '
+total = 0
+DATA.read.scan(/(\d+)x(\d+)x(\d+)/) do |l, w, h|
+  (l, w, h) = [l, w, h].map(&:to_i)
+  bow = l * w * h
+  wrap = [l, w, h].sort[0..1].reduce(:+) * 2
+  total += bow + wrap
+end
+puts total
+__END__
 4x23x21
 22x29x19
 11x4x11
@@ -999,13 +1007,3 @@ input = '
 21x29x14
 20x29x30
 23x11x5
-'
-
-total = 0
-input.scan(/(\d+)x(\d+)x(\d+)/) do |l, w, h|
-  (l, w, h) = [l, w, h].map(&:to_i)
-  bow = l * w * h
-  wrap = [l, w, h].sort[0..1].reduce(:+) * 2
-  total += bow + wrap
-end
-puts total

@@ -1,4 +1,12 @@
-input = '
+total = 0
+DATA.read.scan(/(\d+)x(\d+)x(\d+)/) do |l, w, h|
+  (l, w, h) = [l, w, h].map(&:to_i)
+  area = 2 * l * w + 2 * w * h + 2 * h * l
+  slack = [l, w, h].sort[0..1].reduce(:*)
+  total += area + slack
+end
+puts total
+__END__
 4x23x21
 22x29x19
 11x4x11
@@ -999,13 +1007,4 @@ input = '
 21x29x14
 20x29x30
 23x11x5
-'
 
-total = 0
-input.scan(/(\d+)x(\d+)x(\d+)/) do |l, w, h|
-  (l, w, h) = [l, w, h].map(&:to_i)
-  area = 2 * l * w + 2 * w * h + 2 * h * l
-  slack = [l, w, h].sort[0..1].reduce(:*)
-  total += area + slack
-end
-puts total
