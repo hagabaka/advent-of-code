@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='style.css'>
+    <script src='bower_components/requirejs/require.js' data-main='main.js'></script>
+  </head>
+  <body>
+    <h1>Advent of Code Leaderboard Charts</h1>
+    <nav>
+      <a href='#time-chart'>Completion Times</a>
+      <a href='#domain-chart'>Profile Websites</a>
+      <a href='#language-chart'>Used Languages</a>
+    </nav>
+    <p>You're looking at some charts generated based on
+      <a href='http://www.adventofcode.com'>Advent of Code</a>&rsquo;s
+      <a href='http://www.adventofcode.com/leaderboard'>leaderboard</a> data.
+      (Or you will see them momentarily, unless your browser is not new enough
+      or my fragile <a href='http://www.github.com/hagabaka/advent-of-code/tree/gh-pages'>code</a>
+      stopped working.)
+    </p>
+    <main>
+      <div class='chart' id='time-chart'></div>
+      <div class='chart' id='domain-chart'></div>
+      <div class='chart' id='language-chart'></div>
+    </main>
+  </body>
+</html>

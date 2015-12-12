@@ -1,0 +1,25 @@
+{
+  "name": "advent-of-code",
+  "homepage": "https://hagabaka.github.io/advent-of-code",
+  "authors": [
+    "Yaohan Chen <yaohan.chen@gmail.com>"
+  ],
+  "description": "Analysis of Advent of Code 2015 leaderboard data <http://adventofcode.com/leaderboard>",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "domready": "requirejs-domready#~2.0.1",
+    "fetch": "~0.10.1",
+    "underscore": "underscore-amd#~1.5.2",
+    "chart": "Chart.js#~1.0.2",
+    "highcharts": "~4.1.10"
+  }
+}
