@@ -5,8 +5,6 @@ require.config({
     domready: "bower_components/domready/domReady",
     highcharts: "bower_components/highcharts/lib/highcharts",
     "highcharts-standalone": "bower_components/highcharts/lib/adapters/standalone-framework",
-    json: "bower_components/json/json",
-    text: "bower_components/text/text",
   },
   packages: [
 
