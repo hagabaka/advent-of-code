@@ -1,8 +1,7 @@
 requirejs(['config.js'], function() {
-  var loadingText = 'Loading Data...';
-  require(['highcharts'], function(Highcharts) {
-    require(['domready!'], function() {
-      var timeChart = new Highcharts.Chart({
+  require(['makeChart', 'domready!'], function(makeChart) {
+    require(['fetchTimeData'], function(fetchTimeData) {
+      makeChart({
         chart: {
           renderTo: 'time-chart',
           type: 'bar'
@@ -34,10 +33,8 @@ requirejs(['config.js'], function() {
         },
         data: {dateFormat: 'mm:ss'},
         legend: {enabled: false}
-      });
-      timeChart.showLoading(loadingText);
-      require(['fetchTimeData'], function(fetchTimeData) {
-        fetchTimeData.then(function(data) {
+      }, function(timeChart) {
+        return fetchTimeData.then(function(data) {
           timeChart.addSeries({
             name: 'Completion time',
             data: data.times,
@@ -46,8 +43,10 @@ requirejs(['config.js'], function() {
           timeChart.hideLoading();
         });
       });
+    });
 
-      var domainChart = new Highcharts.Chart({
+    require(['fetchDomainData'], function(fetchDomainData) {
+      makeChart({
         chart: {
           renderTo: 'domain-chart',
           type: 'pie'
@@ -55,39 +54,35 @@ requirejs(['config.js'], function() {
         title: {text: 'Profile Websites'},
         subtitle: {text: 'Websites users chose to link to as their profiles'},
         legend: {enabled: false}
-      });
-      domainChart.showLoading(loadingText);
-      require(['fetchDomainData'], function(fetchDomainData) {
-        fetchDomainData.then(function(data) {
+      }, function(domainChart) {
+        return fetchDomainData.then(function(data) {
           domainChart.addSeries({
             name: 'Number of people who linked to profiles on this site',
             data: data
           });
-          domainChart.hideLoading();
         });
       });
     });
 
-    var languageChart = new Highcharts.Chart({
-      chart: {
-        renderTo: 'language-chart',
-        type: 'pie'
-      },
-      title: {text: 'Used Languages'},
-      subtitle: {
-        text: 'Based on GitHub search of "advent" repositories under listed users',
-        useHTML: true
-      },
-      legend: {enabled: false},
-    });
-    languageChart.showLoading(loadingText);
     require(['fetchLanguageData'], function(fetchLanguageData) {
-      fetchLanguageData.then(function(data) {
-        languageChart.addSeries({
-          name: 'Number of people using this language to solve puzzles',
-          data: data.data
+      makeChart({
+        chart: {
+          renderTo: 'language-chart',
+          type: 'pie'
+        },
+        title: {text: 'Used Languages'},
+        subtitle: {
+          text: 'Based on GitHub search of "advent" repositories under listed users',
+          useHTML: true
+        },
+        legend: {enabled: false},
+      }, function(languageChart) {
+        return fetchLanguageData.then(function(data) {
+          languageChart.addSeries({
+            name: 'Number of people using this language to solve puzzles',
+            data: data.data
+          });
         });
-        languageChart.hideLoading();
       });
     });
   });
