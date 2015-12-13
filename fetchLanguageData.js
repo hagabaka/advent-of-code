@@ -11,11 +11,11 @@ define(['fetchData', 'fetch'], function(fetchData, fetch) {
         }
       }
     });
-   
-    var url = githubApi + 'search/repositories?q=advent' + githubUsers.map(function(user) {
+  
+    var parameters = '?q=advent' + githubUsers.map(function(user) {
       return '+user:' + user;
     }).join('');
-    return fetch(url, {
+    return fetch('https://api.github.com/search/repositories' + parameters, {
       headers: {'User-Agent': 'hagabaka'}
     }).then(function(data) {
       return data.json();
@@ -27,14 +27,15 @@ define(['fetchData', 'fetch'], function(fetchData, fetch) {
           languages[repo.language]++;
         }
       });
+      var sourceUrl = 'https://github.com/search/' + parameters;
       var languageData = [];
       for(var language in languages) {
         languageData.push({
-          name: '<a href="' + url + '+language:' + language + '">' + language + '</a>',
+          name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
           y: languages[language]
         });
       }
-      return {sourceUrl: url, data: languageData};
+      return {sourceUrl: sourceUrl, data: languageData};
     });
   });
 });
