@@ -35,7 +35,7 @@ document.css('.leaderboard-entry').each do |entry|
 
   label = name
   if img
-    label = "<img class='avatar' src='#{avatar}'> #{label}"
+    label = "<img class='avatar' src='#{avatar}'>#{label}"
   end
   if url
     label = "<a href='#{url}'>#{label}</a>"
