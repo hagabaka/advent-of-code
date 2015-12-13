@@ -3,9 +3,10 @@ require.config({
     fetch: "bower_components/fetch/fetch",
     requirejs: "bower_components/requirejs/require",
     domready: "bower_components/domready/domReady",
-    underscore: "bower_components/underscore/underscore",
     highcharts: "bower_components/highcharts/lib/highcharts",
-    "highcharts-standalone": "bower_components/highcharts/lib/adapters/standalone-framework"
+    "highcharts-standalone": "bower_components/highcharts/lib/adapters/standalone-framework",
+    json: "bower_components/json/json",
+    text: "bower_components/text/text",
   },
   packages: [
 
@@ -13,7 +14,7 @@ require.config({
   shim: {
     fetch: {
       exports: "fetch",
-      init: function() {
+      init: function () {
         // Fail on HTTP errors
         return function(url, parameters) {
           return this.fetch(url, parameters).then(function(response) {
@@ -30,8 +31,10 @@ require.config({
     },
     highcharts: {
       exports: "Highcharts",
-      deps: ["highcharts-standalone"],
-      init: function(standalone) {
+      deps: [
+        "highcharts-standalone"
+      ],
+      init: function (standalone) {
         return this.Highcharts(standalone);
       }
     },

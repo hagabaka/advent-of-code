@@ -18,8 +18,9 @@
   "dependencies": {
     "domready": "requirejs-domready#~2.0.1",
     "fetch": "~0.10.1",
-    "underscore": "underscore-amd#~1.5.2",
-    "chart": "Chart.js#~1.0.2",
-    "highcharts": "~4.1.10"
+    "highcharts": "~4.1.10",
+    "json": "requirejs-json#~0.0.3",
+    "text": "requirejs-text#~2.0.14",
+    "requirejs": "~2.1.22"
   }
 }

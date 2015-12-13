@@ -1,0 +1,807 @@
+[
+  {
+    "date": "Dec 12",
+    "entries": [
+      {
+        "rank": "1",
+        "time": "00:03:54",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #31658)",
+        "label": "(anonymous user #31658)"
+      },
+      {
+        "rank": "2",
+        "time": "00:04:25",
+        "url": "https://github.com/ahorner",
+        "avatar": "https://avatars.githubusercontent.com/u/116396?v=3",
+        "name": "ahorner",
+        "label": "<a href='https://github.com/ahorner'><img class='avatar' src='https://avatars.githubusercontent.com/u/116396?v=3'> ahorner</a>"
+      },
+      {
+        "rank": "3",
+        "time": "00:05:58",
+        "url": "https://twitter.com/kejadlen",
+        "avatar": "http://pbs.twimg.com/profile_images/536761445514350592/VPJGrGyf.png",
+        "name": "@kejadlen",
+        "label": "<a href='https://twitter.com/kejadlen'><img class='avatar' src='http://pbs.twimg.com/profile_images/536761445514350592/VPJGrGyf.png'> @kejadlen</a>"
+      },
+      {
+        "rank": "4",
+        "time": "00:06:22",
+        "url": "https://github.com/aegamesi",
+        "avatar": "https://avatars.githubusercontent.com/u/552502?v=3",
+        "name": "Eli Lipsitz",
+        "label": "<a href='https://github.com/aegamesi'><img class='avatar' src='https://avatars.githubusercontent.com/u/552502?v=3'> Eli Lipsitz</a>"
+      },
+      {
+        "rank": "5",
+        "time": "00:06:43",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "Andrew Skalski",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> Andrew Skalski"
+      },
+      {
+        "rank": "6",
+        "time": "00:07:02",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #1682)",
+        "label": "(anonymous user #1682)"
+      },
+      {
+        "rank": "7",
+        "time": "00:07:26",
+        "url": "https://github.com/tonyta",
+        "avatar": "https://avatars.githubusercontent.com/u/5795302?v=3",
+        "name": "tonyta",
+        "label": "<a href='https://github.com/tonyta'><img class='avatar' src='https://avatars.githubusercontent.com/u/5795302?v=3'> tonyta</a>"
+      },
+      {
+        "rank": "8",
+        "time": "00:07:35",
+        "url": "https://github.com/g-p-g",
+        "avatar": "https://avatars.githubusercontent.com/u/6975605?v=3",
+        "name": "g-p-g",
+        "label": "<a href='https://github.com/g-p-g'><img class='avatar' src='https://avatars.githubusercontent.com/u/6975605?v=3'> g-p-g</a>"
+      },
+      {
+        "rank": "9",
+        "time": "00:08:02",
+        "url": "https://github.com/edanaher",
+        "avatar": "https://avatars.githubusercontent.com/u/984691?v=3",
+        "name": "edanaher",
+        "label": "<a href='https://github.com/edanaher'><img class='avatar' src='https://avatars.githubusercontent.com/u/984691?v=3'> edanaher</a>"
+      },
+      {
+        "rank": "10",
+        "time": "00:08:11",
+        "url": null,
+        "avatar": "https://lh5.googleusercontent.com/-YkrSc-sLntI/AAAAAAAAAAI/AAAAAAAAA9Q/mIW3FOsmexk/photo.jpg",
+        "name": "Alex Crimi",
+        "label": "<img class='avatar' src='https://lh5.googleusercontent.com/-YkrSc-sLntI/AAAAAAAAAAI/AAAAAAAAA9Q/mIW3FOsmexk/photo.jpg'> Alex Crimi"
+      },
+      {
+        "rank": "11",
+        "time": "00:08:14",
+        "url": "https://www.reddit.com/u/marchelzo",
+        "avatar": null,
+        "name": "marchelzo",
+        "label": "<a href='https://www.reddit.com/u/marchelzo'>marchelzo</a>"
+      },
+      {
+        "rank": "12",
+        "time": "00:08:18",
+        "url": "https://github.com/jtbandes",
+        "avatar": "https://avatars.githubusercontent.com/u/14237?v=3",
+        "name": "jtbandes",
+        "label": "<a href='https://github.com/jtbandes'><img class='avatar' src='https://avatars.githubusercontent.com/u/14237?v=3'> jtbandes</a>"
+      },
+      {
+        "rank": "13",
+        "time": "00:08:27",
+        "url": "https://github.com/balidani",
+        "avatar": "https://avatars.githubusercontent.com/u/1805302?v=3",
+        "name": "balidani",
+        "label": "<a href='https://github.com/balidani'><img class='avatar' src='https://avatars.githubusercontent.com/u/1805302?v=3'> balidani</a>"
+      },
+      {
+        "rank": "14",
+        "time": "00:08:31",
+        "url": "https://github.com/minno726",
+        "avatar": "https://avatars.githubusercontent.com/u/1452356?v=3",
+        "name": "minno726",
+        "label": "<a href='https://github.com/minno726'><img class='avatar' src='https://avatars.githubusercontent.com/u/1452356?v=3'> minno726</a>"
+      },
+      {
+        "rank": "15",
+        "time": "00:08:41",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #19765)",
+        "label": "(anonymous user #19765)"
+      },
+      {
+        "rank": "16",
+        "time": "00:08:50",
+        "url": "https://github.com/jkseppan",
+        "avatar": "https://avatars.githubusercontent.com/u/92814?v=3",
+        "name": "Jouni K. Seppänen",
+        "label": "<a href='https://github.com/jkseppan'><img class='avatar' src='https://avatars.githubusercontent.com/u/92814?v=3'> Jouni K. Seppänen</a>"
+      },
+      {
+        "rank": "17",
+        "time": "00:08:54",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #44119)",
+        "label": "(anonymous user #44119)"
+      },
+      {
+        "rank": "18",
+        "time": "00:08:57",
+        "url": "https://github.com/bufordsharkley",
+        "avatar": "https://avatars.githubusercontent.com/u/4923417?v=3",
+        "name": "bufordsharkley",
+        "label": "<a href='https://github.com/bufordsharkley'><img class='avatar' src='https://avatars.githubusercontent.com/u/4923417?v=3'> bufordsharkley</a>"
+      },
+      {
+        "rank": "19",
+        "time": "00:09:18",
+        "url": null,
+        "avatar": "http://pbs.twimg.com/profile_images/1351262188/error_icon.png",
+        "name": "@hythloday",
+        "label": "<img class='avatar' src='http://pbs.twimg.com/profile_images/1351262188/error_icon.png'> @hythloday"
+      },
+      {
+        "rank": "20",
+        "time": "00:10:20",
+        "url": "https://github.com/iammer",
+        "avatar": "https://avatars.githubusercontent.com/u/2942526?v=3",
+        "name": "iammer",
+        "label": "<a href='https://github.com/iammer'><img class='avatar' src='https://avatars.githubusercontent.com/u/2942526?v=3'> iammer</a>"
+      },
+      {
+        "rank": "21",
+        "time": "00:10:26",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/14932247?v=3",
+        "name": "ethankward",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/14932247?v=3'> ethankward"
+      },
+      {
+        "rank": "22",
+        "time": "00:10:34",
+        "url": null,
+        "avatar": null,
+        "name": "phil_r",
+        "label": "phil_r"
+      },
+      {
+        "rank": "23",
+        "time": "00:11:25",
+        "url": "https://github.com/QuLogic",
+        "avatar": "https://avatars.githubusercontent.com/u/302469?v=3",
+        "name": "Elliott Sales de Andrade",
+        "label": "<a href='https://github.com/QuLogic'><img class='avatar' src='https://avatars.githubusercontent.com/u/302469?v=3'> Elliott Sales de Andrade</a>"
+      },
+      {
+        "rank": "24",
+        "time": "00:11:47",
+        "url": null,
+        "avatar": null,
+        "name": "reci",
+        "label": "reci"
+      },
+      {
+        "rank": "25",
+        "time": "00:11:50",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/7759622?v=3",
+        "name": "monk-time",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/7759622?v=3'> monk-time"
+      },
+      {
+        "rank": "26",
+        "time": "00:11:51",
+        "url": "https://github.com/msullivan",
+        "avatar": "https://avatars.githubusercontent.com/u/340349?v=3",
+        "name": "msullivan",
+        "label": "<a href='https://github.com/msullivan'><img class='avatar' src='https://avatars.githubusercontent.com/u/340349?v=3'> msullivan</a>"
+      },
+      {
+        "rank": "27",
+        "time": "00:11:55",
+        "url": "https://github.com/player1537",
+        "avatar": "https://avatars.githubusercontent.com/u/1215969?v=3",
+        "name": "player1537",
+        "label": "<a href='https://github.com/player1537'><img class='avatar' src='https://avatars.githubusercontent.com/u/1215969?v=3'> player1537</a>"
+      },
+      {
+        "rank": "28",
+        "time": "00:11:57",
+        "url": null,
+        "avatar": "https://lh5.googleusercontent.com/-rMYjp-t8LdQ/AAAAAAAAAAI/AAAAAAAAAEs/I_X6nO7rhow/photo.jpg",
+        "name": "Robert Offner",
+        "label": "<img class='avatar' src='https://lh5.googleusercontent.com/-rMYjp-t8LdQ/AAAAAAAAAAI/AAAAAAAAAEs/I_X6nO7rhow/photo.jpg'> Robert Offner"
+      },
+      {
+        "rank": "29",
+        "time": "00:11:57",
+        "url": "https://github.com/dougo",
+        "avatar": "https://avatars.githubusercontent.com/u/252295?v=3",
+        "name": "Doug Orleans",
+        "label": "<a href='https://github.com/dougo'><img class='avatar' src='https://avatars.githubusercontent.com/u/252295?v=3'> Doug Orleans</a>"
+      },
+      {
+        "rank": "30",
+        "time": "00:12:13",
+        "url": "https://github.com/0",
+        "avatar": "https://avatars.githubusercontent.com/u/140823?v=3",
+        "name": "0",
+        "label": "<a href='https://github.com/0'><img class='avatar' src='https://avatars.githubusercontent.com/u/140823?v=3'> 0</a>"
+      },
+      {
+        "rank": "31",
+        "time": "00:12:21",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #14246)",
+        "label": "(anonymous user #14246)"
+      },
+      {
+        "rank": "32",
+        "time": "00:12:24",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #3311)",
+        "label": "(anonymous user #3311)"
+      },
+      {
+        "rank": "33",
+        "time": "00:12:35",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/313125?v=3",
+        "name": "Chandler",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/313125?v=3'> Chandler"
+      },
+      {
+        "rank": "34",
+        "time": "00:12:45",
+        "url": "https://twitter.com/alialliallie",
+        "avatar": "http://pbs.twimg.com/profile_images/670778635347869696/DuZt8OAQ.jpg",
+        "name": "@alialliallie",
+        "label": "<a href='https://twitter.com/alialliallie'><img class='avatar' src='http://pbs.twimg.com/profile_images/670778635347869696/DuZt8OAQ.jpg'> @alialliallie</a>"
+      },
+      {
+        "rank": "35",
+        "time": "00:12:57",
+        "url": null,
+        "avatar": "http://pbs.twimg.com/profile_images/1871469201/profile.png",
+        "name": "@fenomas",
+        "label": "<img class='avatar' src='http://pbs.twimg.com/profile_images/1871469201/profile.png'> @fenomas"
+      },
+      {
+        "rank": "36",
+        "time": "00:13:03",
+        "url": "https://github.com/ratmatix",
+        "avatar": "https://avatars.githubusercontent.com/u/11814050?v=3",
+        "name": "ratmatix",
+        "label": "<a href='https://github.com/ratmatix'><img class='avatar' src='https://avatars.githubusercontent.com/u/11814050?v=3'> ratmatix</a>"
+      },
+      {
+        "rank": "37",
+        "time": "00:13:42",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/1105706?v=3",
+        "name": "stranac",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/1105706?v=3'> stranac"
+      },
+      {
+        "rank": "38",
+        "time": "00:13:44",
+        "url": "https://github.com/def-",
+        "avatar": "https://avatars.githubusercontent.com/u/2335377?v=3",
+        "name": "def-",
+        "label": "<a href='https://github.com/def-'><img class='avatar' src='https://avatars.githubusercontent.com/u/2335377?v=3'> def-</a>"
+      },
+      {
+        "rank": "39",
+        "time": "00:13:52",
+        "url": null,
+        "avatar": null,
+        "name": "dougg3",
+        "label": "dougg3"
+      },
+      {
+        "rank": "40",
+        "time": "00:14:01",
+        "url": "https://github.com/RZachLamberty",
+        "avatar": "https://avatars.githubusercontent.com/u/6100896?v=3",
+        "name": "RZachLamberty",
+        "label": "<a href='https://github.com/RZachLamberty'><img class='avatar' src='https://avatars.githubusercontent.com/u/6100896?v=3'> RZachLamberty</a>"
+      },
+      {
+        "rank": "41",
+        "time": "00:14:06",
+        "url": "https://github.com/malisper",
+        "avatar": "https://avatars.githubusercontent.com/u/6210567?v=3",
+        "name": "malisper",
+        "label": "<a href='https://github.com/malisper'><img class='avatar' src='https://avatars.githubusercontent.com/u/6210567?v=3'> malisper</a>"
+      },
+      {
+        "rank": "42",
+        "time": "00:14:12",
+        "url": "https://github.com/Mause",
+        "avatar": "https://avatars.githubusercontent.com/u/1405026?v=3",
+        "name": "Mause",
+        "label": "<a href='https://github.com/Mause'><img class='avatar' src='https://avatars.githubusercontent.com/u/1405026?v=3'> Mause</a>"
+      },
+      {
+        "rank": "43",
+        "time": "00:14:18",
+        "url": null,
+        "avatar": "https://lh4.googleusercontent.com/-ggZWdKLWvBo/AAAAAAAAAAI/AAAAAAAA2Rk/Nqq7bPWTHNI/photo.jpg",
+        "name": "Paul Hankin",
+        "label": "<img class='avatar' src='https://lh4.googleusercontent.com/-ggZWdKLWvBo/AAAAAAAAAAI/AAAAAAAA2Rk/Nqq7bPWTHNI/photo.jpg'> Paul Hankin"
+      },
+      {
+        "rank": "44",
+        "time": "00:14:21",
+        "url": "https://twitter.com/callmewuest",
+        "avatar": "http://pbs.twimg.com/profile_images/631852616381652992/I6lvZlR1.png",
+        "name": "@callmewuest",
+        "label": "<a href='https://twitter.com/callmewuest'><img class='avatar' src='http://pbs.twimg.com/profile_images/631852616381652992/I6lvZlR1.png'> @callmewuest</a>"
+      },
+      {
+        "rank": "45",
+        "time": "00:14:48",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/2750246?v=3",
+        "name": "Daniel Gibbs",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/2750246?v=3'> Daniel Gibbs"
+      },
+      {
+        "rank": "46",
+        "time": "00:14:55",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/1232162?v=3",
+        "name": "Willux",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/1232162?v=3'> Willux"
+      },
+      {
+        "rank": "47",
+        "time": "00:15:33",
+        "url": "https://plus.google.com/+IgorNaverniouk",
+        "avatar": "https://lh4.googleusercontent.com/-rfcpAVcvHhg/AAAAAAAAAAI/AAAAAAAAEXM/_17uLe1IxZI/photo.jpg",
+        "name": "Igor Naverniouk",
+        "label": "<a href='https://plus.google.com/+IgorNaverniouk'><img class='avatar' src='https://lh4.googleusercontent.com/-rfcpAVcvHhg/AAAAAAAAAAI/AAAAAAAAEXM/_17uLe1IxZI/photo.jpg'> Igor Naverniouk</a>"
+      },
+      {
+        "rank": "48",
+        "time": "00:15:47",
+        "url": "https://github.com/anthonynguyen",
+        "avatar": "https://avatars.githubusercontent.com/u/1484987?v=3",
+        "name": "Anthony Nguyen",
+        "label": "<a href='https://github.com/anthonynguyen'><img class='avatar' src='https://avatars.githubusercontent.com/u/1484987?v=3'> Anthony Nguyen</a>"
+      },
+      {
+        "rank": "49",
+        "time": "00:16:11",
+        "url": "https://twitter.com/kivikakk",
+        "avatar": "http://pbs.twimg.com/profile_images/668330049460789248/hL7cCnA6.jpg",
+        "name": "arlequinne",
+        "label": "<a href='https://twitter.com/kivikakk'><img class='avatar' src='http://pbs.twimg.com/profile_images/668330049460789248/hL7cCnA6.jpg'> arlequinne</a>"
+      },
+      {
+        "rank": "50",
+        "time": "00:16:16",
+        "url": "https://github.com/gareve",
+        "avatar": "https://avatars.githubusercontent.com/u/1031137?v=3",
+        "name": "gareve",
+        "label": "<a href='https://github.com/gareve'><img class='avatar' src='https://avatars.githubusercontent.com/u/1031137?v=3'> gareve</a>"
+      },
+      {
+        "rank": "51",
+        "time": "00:16:20",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/240570?v=3",
+        "name": "chamblin",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/240570?v=3'> chamblin"
+      },
+      {
+        "rank": "52",
+        "time": "00:16:37",
+        "url": null,
+        "avatar": null,
+        "name": "f2f",
+        "label": "f2f"
+      },
+      {
+        "rank": "53",
+        "time": "00:16:49",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #32268)",
+        "label": "(anonymous user #32268)"
+      },
+      {
+        "rank": "54",
+        "time": "00:16:51",
+        "url": "https://github.com/castrolol",
+        "avatar": "https://avatars.githubusercontent.com/u/2396226?v=3",
+        "name": "Luan Castro",
+        "label": "<a href='https://github.com/castrolol'><img class='avatar' src='https://avatars.githubusercontent.com/u/2396226?v=3'> Luan Castro</a>"
+      },
+      {
+        "rank": "55",
+        "time": "00:16:53",
+        "url": null,
+        "avatar": null,
+        "name": "(anonymous user #18180)",
+        "label": "(anonymous user #18180)"
+      },
+      {
+        "rank": "56",
+        "time": "00:16:56",
+        "url": "https://www.reddit.com/u/imapiekindaguy",
+        "avatar": null,
+        "name": "imapiekindaguy",
+        "label": "<a href='https://www.reddit.com/u/imapiekindaguy'>imapiekindaguy</a>"
+      },
+      {
+        "rank": "57",
+        "time": "00:17:08",
+        "url": "https://github.com/lukechampine",
+        "avatar": "https://avatars.githubusercontent.com/u/3344749?v=3",
+        "name": "lukechampine",
+        "label": "<a href='https://github.com/lukechampine'><img class='avatar' src='https://avatars.githubusercontent.com/u/3344749?v=3'> lukechampine</a>"
+      },
+      {
+        "rank": "58",
+        "time": "00:17:21",
+        "url": "https://twitter.com/LRcomic",
+        "avatar": "http://pbs.twimg.com/profile_images/660873931033673728/T3aNHbZ9.png",
+        "name": "Brian Lee",
+        "label": "<a href='https://twitter.com/LRcomic'><img class='avatar' src='http://pbs.twimg.com/profile_images/660873931033673728/T3aNHbZ9.png'> Brian Lee</a>"
+      },
+      {
+        "rank": "59",
+        "time": "00:17:29",
+        "url": "https://github.com/yupferris",
+        "avatar": "https://avatars.githubusercontent.com/u/3166056?v=3",
+        "name": "ferris",
+        "label": "<a href='https://github.com/yupferris'><img class='avatar' src='https://avatars.githubusercontent.com/u/3166056?v=3'> ferris</a>"
+      },
+      {
+        "rank": "60",
+        "time": "00:17:50",
+        "url": "https://github.com/iamed2",
+        "avatar": "https://avatars.githubusercontent.com/u/3131001?v=3",
+        "name": "Eric Davies",
+        "label": "<a href='https://github.com/iamed2'><img class='avatar' src='https://avatars.githubusercontent.com/u/3131001?v=3'> Eric Davies</a>"
+      },
+      {
+        "rank": "61",
+        "time": "00:17:58",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/426928?v=3",
+        "name": "Chris Akers",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/426928?v=3'> Chris Akers"
+      },
+      {
+        "rank": "62",
+        "time": "00:18:08",
+        "url": "https://github.com/keegancsmith",
+        "avatar": "https://avatars.githubusercontent.com/u/187831?v=3",
+        "name": "Keegan Carruthers-Smith",
+        "label": "<a href='https://github.com/keegancsmith'><img class='avatar' src='https://avatars.githubusercontent.com/u/187831?v=3'> Keegan Carruthers-Smith</a>"
+      },
+      {
+        "rank": "63",
+        "time": "00:18:11",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "Domantas Jadenkus",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> Domantas Jadenkus"
+      },
+      {
+        "rank": "64",
+        "time": "00:18:27",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/3115209?v=3",
+        "name": "samuelvonstachelski",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/3115209?v=3'> samuelvonstachelski"
+      },
+      {
+        "rank": "65",
+        "time": "00:18:53",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "ferricguy",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> ferricguy"
+      },
+      {
+        "rank": "66",
+        "time": "00:19:16",
+        "url": "https://github.com/johnny5th",
+        "avatar": "https://avatars.githubusercontent.com/u/1295771?v=3",
+        "name": "johnny5th",
+        "label": "<a href='https://github.com/johnny5th'><img class='avatar' src='https://avatars.githubusercontent.com/u/1295771?v=3'> johnny5th</a>"
+      },
+      {
+        "rank": "67",
+        "time": "00:19:25",
+        "url": null,
+        "avatar": "http://pbs.twimg.com/profile_images/3589509922/7de128a7cfce0cfa05c05d1eb22313d1.png",
+        "name": "Stereo",
+        "label": "<img class='avatar' src='http://pbs.twimg.com/profile_images/3589509922/7de128a7cfce0cfa05c05d1eb22313d1.png'> Stereo"
+      },
+      {
+        "rank": "68",
+        "time": "00:19:28",
+        "url": null,
+        "avatar": null,
+        "name": "djimbob",
+        "label": "djimbob"
+      },
+      {
+        "rank": "69",
+        "time": "00:19:41",
+        "url": "https://github.com/dsemi",
+        "avatar": "https://avatars.githubusercontent.com/u/1354293?v=3",
+        "name": "Dan Seminara ",
+        "label": "<a href='https://github.com/dsemi'><img class='avatar' src='https://avatars.githubusercontent.com/u/1354293?v=3'> Dan Seminara </a>"
+      },
+      {
+        "rank": "70",
+        "time": "00:19:48",
+        "url": "https://github.com/jneubrand",
+        "avatar": "https://avatars.githubusercontent.com/u/15683245?v=3",
+        "name": "jneubrand",
+        "label": "<a href='https://github.com/jneubrand'><img class='avatar' src='https://avatars.githubusercontent.com/u/15683245?v=3'> jneubrand</a>"
+      },
+      {
+        "rank": "71",
+        "time": "00:20:26",
+        "url": null,
+        "avatar": null,
+        "name": "japillow",
+        "label": "japillow"
+      },
+      {
+        "rank": "72",
+        "time": "00:20:35",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/6647517?v=3",
+        "name": "Bradcomp",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/6647517?v=3'> Bradcomp"
+      },
+      {
+        "rank": "73",
+        "time": "00:20:49",
+        "url": "https://github.com/rahulsom",
+        "avatar": "https://avatars.githubusercontent.com/u/193047?v=3",
+        "name": "rahulsom",
+        "label": "<a href='https://github.com/rahulsom'><img class='avatar' src='https://avatars.githubusercontent.com/u/193047?v=3'> rahulsom</a>"
+      },
+      {
+        "rank": "74",
+        "time": "00:20:54",
+        "url": null,
+        "avatar": "https://lh4.googleusercontent.com/-GOtE4_IDM78/AAAAAAAAAAI/AAAAAAAAAEI/L1PA8rWoAxk/photo.jpg",
+        "name": "Raven Black",
+        "label": "<img class='avatar' src='https://lh4.googleusercontent.com/-GOtE4_IDM78/AAAAAAAAAAI/AAAAAAAAAEI/L1PA8rWoAxk/photo.jpg'> Raven Black"
+      },
+      {
+        "rank": "75",
+        "time": "00:20:58",
+        "url": "https://github.com/OstrichProjects",
+        "avatar": "https://avatars.githubusercontent.com/u/5961416?v=3",
+        "name": "Jonathan Ostrander",
+        "label": "<a href='https://github.com/OstrichProjects'><img class='avatar' src='https://avatars.githubusercontent.com/u/5961416?v=3'> Jonathan Ostrander</a>"
+      },
+      {
+        "rank": "76",
+        "time": "00:21:41",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-OLN-wYcyt2s/AAAAAAAAAAI/AAAAAAAAAAA/v8jFj51BjkA/photo.jpg",
+        "name": "Andre LeBlanc",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-OLN-wYcyt2s/AAAAAAAAAAI/AAAAAAAAAAA/v8jFj51BjkA/photo.jpg'> Andre LeBlanc"
+      },
+      {
+        "rank": "77",
+        "time": "00:21:50",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "Jerome Brock",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> Jerome Brock"
+      },
+      {
+        "rank": "78",
+        "time": "00:21:52",
+        "url": "https://github.com/randrews",
+        "avatar": "https://avatars.githubusercontent.com/u/74693?v=3",
+        "name": "randrews",
+        "label": "<a href='https://github.com/randrews'><img class='avatar' src='https://avatars.githubusercontent.com/u/74693?v=3'> randrews</a>"
+      },
+      {
+        "rank": "79",
+        "time": "00:21:56",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/856752?v=3",
+        "name": "xoposhiy",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/856752?v=3'> xoposhiy"
+      },
+      {
+        "rank": "80",
+        "time": "00:22:00",
+        "url": "https://twitter.com/chrishouser",
+        "avatar": "http://pbs.twimg.com/profile_images/570248395362844672/EWfuxLj_.jpeg",
+        "name": "Chouser",
+        "label": "<a href='https://twitter.com/chrishouser'><img class='avatar' src='http://pbs.twimg.com/profile_images/570248395362844672/EWfuxLj_.jpeg'> Chouser</a>"
+      },
+      {
+        "rank": "81",
+        "time": "00:22:07",
+        "url": "https://github.com/bildzeitung",
+        "avatar": "https://avatars.githubusercontent.com/u/56396?v=3",
+        "name": "bildzeitung",
+        "label": "<a href='https://github.com/bildzeitung'><img class='avatar' src='https://avatars.githubusercontent.com/u/56396?v=3'> bildzeitung</a>"
+      },
+      {
+        "rank": "82",
+        "time": "00:22:14",
+        "url": "https://github.com/hughdbrown",
+        "avatar": "https://avatars.githubusercontent.com/u/90322?v=3",
+        "name": "Hugh Brown",
+        "label": "<a href='https://github.com/hughdbrown'><img class='avatar' src='https://avatars.githubusercontent.com/u/90322?v=3'> Hugh Brown</a>"
+      },
+      {
+        "rank": "83",
+        "time": "00:22:34",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/597936?v=3",
+        "name": "Consonant Wave",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/597936?v=3'> Consonant Wave"
+      },
+      {
+        "rank": "84",
+        "time": "00:22:43",
+        "url": null,
+        "avatar": "http://pbs.twimg.com/profile_images/547248412576317440/Ox7VULVy.jpeg",
+        "name": "bryan",
+        "label": "<img class='avatar' src='http://pbs.twimg.com/profile_images/547248412576317440/Ox7VULVy.jpeg'> bryan"
+      },
+      {
+        "rank": "85",
+        "time": "00:22:46",
+        "url": "https://twitter.com/yatpay",
+        "avatar": "http://pbs.twimg.com/profile_images/3592490502/238c8a40a4034ba9ac4cc369e63e0698.jpeg",
+        "name": "JP Burke",
+        "label": "<a href='https://twitter.com/yatpay'><img class='avatar' src='http://pbs.twimg.com/profile_images/3592490502/238c8a40a4034ba9ac4cc369e63e0698.jpeg'> JP Burke</a>"
+      },
+      {
+        "rank": "86",
+        "time": "00:22:51",
+        "url": null,
+        "avatar": null,
+        "name": "Bali_Balo",
+        "label": "Bali_Balo"
+      },
+      {
+        "rank": "87",
+        "time": "00:22:55",
+        "url": "https://github.com/tomtheisen",
+        "avatar": "https://avatars.githubusercontent.com/u/2049910?v=3",
+        "name": "tomtheisen",
+        "label": "<a href='https://github.com/tomtheisen'><img class='avatar' src='https://avatars.githubusercontent.com/u/2049910?v=3'> tomtheisen</a>"
+      },
+      {
+        "rank": "88",
+        "time": "00:23:18",
+        "url": "https://github.com/jsachs",
+        "avatar": "https://avatars.githubusercontent.com/u/954072?v=3",
+        "name": "jsachs",
+        "label": "<a href='https://github.com/jsachs'><img class='avatar' src='https://avatars.githubusercontent.com/u/954072?v=3'> jsachs</a>"
+      },
+      {
+        "rank": "89",
+        "time": "00:23:37",
+        "url": "https://plus.google.com/115602279562419776117",
+        "avatar": "https://lh6.googleusercontent.com/-FKvnd-BfSsI/AAAAAAAAAAI/AAAAAAAAB8c/MhiUCvaW27c/photo.jpg",
+        "name": "Tom Davies",
+        "label": "<a href='https://plus.google.com/115602279562419776117'><img class='avatar' src='https://lh6.googleusercontent.com/-FKvnd-BfSsI/AAAAAAAAAAI/AAAAAAAAB8c/MhiUCvaW27c/photo.jpg'> Tom Davies</a>"
+      },
+      {
+        "rank": "90",
+        "time": "00:23:43",
+        "url": "https://github.com/ubiquill",
+        "avatar": "https://avatars.githubusercontent.com/u/476133?v=3",
+        "name": "Briar Rose Schreiber",
+        "label": "<a href='https://github.com/ubiquill'><img class='avatar' src='https://avatars.githubusercontent.com/u/476133?v=3'> Briar Rose Schreiber</a>"
+      },
+      {
+        "rank": "91",
+        "time": "00:24:00",
+        "url": "https://github.com/jorenerene",
+        "avatar": "https://avatars.githubusercontent.com/u/1887181?v=3",
+        "name": "Jorene René",
+        "label": "<a href='https://github.com/jorenerene'><img class='avatar' src='https://avatars.githubusercontent.com/u/1887181?v=3'> Jorene René</a>"
+      },
+      {
+        "rank": "92",
+        "time": "00:24:14",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/1923854?v=3",
+        "name": "soolar",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/1923854?v=3'> soolar"
+      },
+      {
+        "rank": "93",
+        "time": "00:24:22",
+        "url": "https://github.com/Hwesta",
+        "avatar": "https://avatars.githubusercontent.com/u/3166226?v=3",
+        "name": "Hwesta",
+        "label": "<a href='https://github.com/Hwesta'><img class='avatar' src='https://avatars.githubusercontent.com/u/3166226?v=3'> Hwesta</a>"
+      },
+      {
+        "rank": "94",
+        "time": "00:24:35",
+        "url": null,
+        "avatar": "https://avatars.githubusercontent.com/u/8664776?v=3",
+        "name": "mathiasvr",
+        "label": "<img class='avatar' src='https://avatars.githubusercontent.com/u/8664776?v=3'> mathiasvr"
+      },
+      {
+        "rank": "95",
+        "time": "00:24:36",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "JLRishe",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> JLRishe"
+      },
+      {
+        "rank": "96",
+        "time": "00:25:23",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+        "name": "Russ Ford",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'> Russ Ford"
+      },
+      {
+        "rank": "97",
+        "time": "00:25:30",
+        "url": null,
+        "avatar": "https://lh3.googleusercontent.com/-dNPFB7_Gnpw/AAAAAAAAAAI/AAAAAAAAB6w/YSjTvu3giwc/photo.jpg",
+        "name": "Antti Kangasrääsiö",
+        "label": "<img class='avatar' src='https://lh3.googleusercontent.com/-dNPFB7_Gnpw/AAAAAAAAAAI/AAAAAAAAB6w/YSjTvu3giwc/photo.jpg'> Antti Kangasrääsiö"
+      },
+      {
+        "rank": "98",
+        "time": "00:26:02",
+        "url": "https://github.com/mbillard",
+        "avatar": "https://avatars.githubusercontent.com/u/900216?v=3",
+        "name": "Michel Billard",
+        "label": "<a href='https://github.com/mbillard'><img class='avatar' src='https://avatars.githubusercontent.com/u/900216?v=3'> Michel Billard</a>"
+      },
+      {
+        "rank": "99",
+        "time": "00:26:18",
+        "url": "https://twitter.com/keithmo",
+        "avatar": "http://pbs.twimg.com/profile_images/669416792268361728/ARomSMQp.jpg",
+        "name": "@keithmo",
+        "label": "<a href='https://twitter.com/keithmo'><img class='avatar' src='http://pbs.twimg.com/profile_images/669416792268361728/ARomSMQp.jpg'> @keithmo</a>"
+      },
+      {
+        "rank": "100",
+        "time": "00:26:27",
+        "url": "https://github.com/hlian",
+        "avatar": "https://avatars.githubusercontent.com/u/63533?v=3",
+        "name": "Hao Lian",
+        "label": "<a href='https://github.com/hlian'><img class='avatar' src='https://avatars.githubusercontent.com/u/63533?v=3'> Hao Lian</a>"
+      }
+    ]
+  }
+]
