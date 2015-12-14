@@ -14,7 +14,7 @@ requirejs(['config.js'], function() {
             var seconds = totalSeconds % 60;
             var totalMinutes = (totalSeconds - seconds) / 60;
             var minutes = totalMinutes % 60;
-            return this.x + ': <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>'; 
+            return this.x + ' (' + this.series.name + '): <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>'; 
           },
           followPointer: true
         },
@@ -31,15 +31,16 @@ requirejs(['config.js'], function() {
           units: [['second', [120]]],
           showFirstLabel: false
         },
-        data: {dateFormat: 'mm:ss'},
-        legend: {enabled: false}
+        data: {dateFormat: 'mm:ss'}
       }, function(timeChart) {
         return fetchTimeData.then(function(data) {
-          timeChart.addSeries({
-            name: 'Completion time',
-            data: data.times,
+          data.forEach(function(day) {
+            timeChart.addSeries({
+              name: day.date,
+              data: day.times,
+            });
           });
-          timeChart.get('xAxis').setCategories(data.labels);
+          timeChart.get('xAxis').setCategories(data[0].labels);
           timeChart.hideLoading();
         });
       });
@@ -53,18 +54,30 @@ requirejs(['config.js'], function() {
         },
         title: {text: 'Profile Websites'},
         subtitle: {text: 'Websites users chose to link to as their profiles'},
-        legend: {enabled: false}
+        legend: {enabled: true}
       }, function(domainChart) {
         return fetchDomainData.then(function(data) {
-          domainChart.addSeries({
-            name: 'Number of people who linked to profiles on this site',
-            data: data
+          data.forEach(function(day, index) {
+            var centerX = (index * 2 + 1) / (data.length * 2) * 100 + '%';
+            var centerY = '50%';
+            domainChart.addSeries({
+              name: day.date,
+              data: day.data,
+              center: [centerX, centerY],
+              title: {
+                text: day.date,
+                verticalAlign: 'top',
+                align: 'center',
+                y: -50
+              }
+            });
           });
         });
       });
     });
 
     require(['fetchLanguageData'], function(fetchLanguageData) {
+      var anchorText = 'GitHub search';
       makeChart({
         chart: {
           renderTo: 'language-chart',
@@ -72,14 +85,19 @@ requirejs(['config.js'], function() {
         },
         title: {text: 'Used Languages'},
         subtitle: {
-          text: 'Based on GitHub search of "advent" repositories under listed users',
+          text: 'Based on ' + anchorText + ' of "advent" repositories under listed users',
           useHTML: true
         },
-        legend: {enabled: false},
       }, function(languageChart) {
         return fetchLanguageData.then(function(data) {
+          var subtitleOption = languageChart.options.subtitle;
+          subtitleOption.text = subtitleOption.text.replace(
+            anchorText,
+            '<a href="' + data.sourceUrl + '">' + anchorText + '</a>'
+          );
+          languageChart.setTitle(null, subtitleOption);
           languageChart.addSeries({
-            name: 'Number of people using this language to solve puzzles',
+            name: data.label,
             data: data.data
           });
         });

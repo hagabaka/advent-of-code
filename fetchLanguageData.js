@@ -1,41 +1,40 @@
-define(['fetchData', 'fetch'], function(fetchData, fetch) {
-  return fetchData.then(function(data) {
-    var languages = {};
-    var githubApi = 'https://api.github.com/';
-    var githubUsers = [];
-    data.forEach(function(entry) {
-      if(entry.url) {
-        var match = /github\.com\/([^\/]+)/.exec(entry.url);
-        if(match) {
-          githubUsers.push(match[1]);
+define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator) {
+  return fetchData.then(function(days) {
+    var githubUsers = new Tabulator();
+    days.forEach(function(day) {
+      day.entries.forEach(function(entry) {
+        if(entry.url) {
+          var match = /github\.com\/([^\/]+)/.exec(entry.url);
+          if(match) {
+            githubUsers.set(match[1], 1);
+          }
         }
-      }
+      });
     });
   
-    var parameters = '?q=advent' + githubUsers.map(function(user) {
+    var parameters = '?q=advent' + githubUsers.names().map(function(user) {
       return '+user:' + user;
     }).join('');
     return fetch('https://api.github.com/search/repositories' + parameters, {
-      headers: {'User-Agent': 'hagabaka'}
+      headers: {'User-Agent': 'hagabaka/advent-of-code'}
     }).then(function(data) {
       return data.json();
     }).then(function(json) {
+      var languageCounts = new Tabulator();
       json.items.forEach(function(repo) {
-        if(!(repo.language in languages)) {
-          languages[repo.language] = 1;
-        } else {
-          languages[repo.language]++;
-        }
+        languageCounts.increment(repo.language);
       });
       var sourceUrl = 'https://github.com/search/' + parameters;
-      var languageData = [];
-      for(var language in languages) {
-        languageData.push({
-          name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
-          y: languages[language]
-        });
-      }
-      return {sourceUrl: sourceUrl, data: languageData};
+      return {
+        sourceUrl: sourceUrl,
+        label: [days[0].date, days[days.length - 1].date].join(' - '),
+        data: languageCounts.names().map(function(language) {
+          return {
+            name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
+            y: languageCounts.get(language)
+          };
+        })
+      };
     });
   });
 });

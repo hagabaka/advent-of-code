@@ -30,10 +30,13 @@ require.config({
     highcharts: {
       exports: "Highcharts",
       deps: [
-        "highcharts-standalone"
+        "highcharts-standalone",
+        "highcharts-pie-titles",
       ],
-      init: function (standalone) {
-        return this.Highcharts(standalone);
+      init: function (standalone, pieTitles) {
+        var Highcharts = this.Highcharts(standalone);
+        pieTitles(Highcharts);
+        return Highcharts;
       }
     },
     "highcharts-standalone": {
