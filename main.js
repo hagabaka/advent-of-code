@@ -63,6 +63,7 @@ requirejs(['config.js'], function() {
             domainChart.addSeries({
               name: day.date,
               data: day.data,
+              dataLabels: {useHTML: true},
               center: [centerX, centerY],
               title: {
                 text: day.date,
@@ -98,7 +99,8 @@ requirejs(['config.js'], function() {
           languageChart.setTitle(null, subtitleOption);
           languageChart.addSeries({
             name: data.label,
-            data: data.data
+            data: data.data,
+            dataLabels: {useHTML: true}
           });
         });
       });
