@@ -4,8 +4,9 @@ define(['highcharts'], function(HighCharts) {
     chart.showLoading('Loading data...');
     addData(chart).then(function() {
       chart.hideLoading();
-    }).catch(function() {
+    }).catch(function(error) {
       chart.showLoading('Failed to load Data!');
+      throw error;
     });
   };
 });
