@@ -14,9 +14,17 @@ define(['fetchData'], function(fetchData) {
       });
       return {date: day.date, times: times, ranks: ranks};
     });
-    var latestRanks = listedData[listedData.length - 1].ranks;
     var labels = Object.keys(labelSet).sort(function(a, b) {
-      return (latestRanks[a] || Infinity) - (latestRanks[b] || Infinity);
+      var rankA = null;
+      var rankB = null;
+      for(var i = listedData.length - 1; i >= 0; i--) {
+        rankA = listedData[i].ranks[a];
+        rankB = listedData[i].ranks[b];
+        if(rankA || rankB) {
+          break;
+        }
+      }
+      return (rankA || Infinity) - (rankB || Infinity);
     });
     return listedData.map(function(day) {
       return {
