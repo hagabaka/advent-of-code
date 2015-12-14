@@ -12,23 +12,33 @@ define(['fetchData', 'tabulator'], function(fetchData, Tabulator) {
       };
     });
   }
-  return fetchData.then(function(days) {
-    var data = days.map(function(day) {
-      var domains = new Tabulator();
-      domains.set(noWebsiteText, 0);
-      day.entries.forEach(function(entry) {
-        if(entry.url) {
-          var match = /\/\/([a-zA-Z.]+)/.exec(entry.url);
-          if(match) {
-            var domain = match[1];
-            domains.increment(domain);
-          }
-        } else {
-          domains.increment(noWebsiteText);
+  function makeDomainTabulator() {
+    var tabulator = new Tabulator();
+    tabulator.set(noWebsiteText, 0);
+    return tabulator;
+  }
+  function countEntries(entries, domains, countedUrls) {
+    entries.forEach(function(entry) {
+      if(entry.url && (!countedUrls || !countedUrls.get(entry.url))) {
+        var match = /\/\/([a-zA-Z.]+)/.exec(entry.url);
+        if(match) {
+          var domain = match[1];
+          domains.increment(domain);
         }
-      });
-      return {date: day.date, data: makeDomainData(domains)};
+      } else {
+        domains.increment(noWebsiteText);
+      }
     });
-    return data;
+  }
+  return fetchData.then(function(days) {
+    var totalDomains = makeDomainTabulator();
+    var countedUrls = new Tabulator();
+    days.forEach(function(day) {
+      countEntries(day.entries, totalDomains, countedUrls);
+    });
+    return [{
+      date: days[0].date + ' - ' + days[days.length - 1].date,
+      data: makeDomainData(totalDomains)
+    }];
   });
 });

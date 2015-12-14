@@ -64,13 +64,7 @@ requirejs(['config.js'], function() {
               name: day.date,
               data: day.data,
               dataLabels: {useHTML: true},
-              center: [centerX, centerY],
-              title: {
-                text: day.date,
-                verticalAlign: 'top',
-                align: 'center',
-                y: -50
-              }
+              center: [centerX, centerY]
             });
           });
         });
