@@ -11,30 +11,51 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
         }
       });
     });
-  
+ 
     var parameters = '?q=advent' + githubUsers.names().map(function(user) {
       return '+user:' + user;
     }).join('');
-    return fetch('https://api.github.com/search/repositories' + parameters, {
-      headers: {'User-Agent': 'hagabaka/advent-of-code'}
-    }).then(function(data) {
-      return data.json();
-    }).then(function(json) {
-      var languageCounts = new Tabulator();
-      json.items.forEach(function(repo) {
-        languageCounts.increment(repo.language);
-      });
-      var sourceUrl = 'https://github.com/search/' + parameters;
-      return {
-        sourceUrl: sourceUrl,
-        label: [days[0].date, days[days.length - 1].date].join(' - '),
-        data: languageCounts.names().map(function(language) {
+
+    var maxRequests = 5;
+    var urlQueue = [];
+    var languageCounts = new Tabulator();
+    function fetchGitHubData(url) {
+      return fetch(url, {
+        headers: {'User-Agent': 'hagabaka/advent-of-code'}
+      }).then(function(response) {
+        if(urlQueue.length <= maxRequests) {
+          var links = response.headers.get('Link');
+          if(links) {
+            var match = /<([^>]+)>; rel="next"/.exec(links);
+            if(match) {
+              urlQueue.push(match[1]);
+            }
+          }
+        }
+        return response.json();
+      }).then(function(json) {
+        json.items.forEach(function(repo) {
+          languageCounts.increment(repo.language);
+        });
+      }).then(function() {
+        if(urlQueue.length > 0) {
+          return fetchGitHubData(urlQueue.shift());
+        } else {
+          var sourceUrl = 'https://github.com/search/' + parameters;
           return {
-            name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
-            y: languageCounts.get(language)
+            sourceUrl: sourceUrl,
+            label: [days[0].date, days[days.length - 1].date].join(' - '),
+            data: languageCounts.names().map(function(language) {
+              return {
+                name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
+                y: languageCounts.get(language)
+              };
+            })
           };
-        })
-      };
-    });
+        }
+      });
+    }
+
+    return fetchGitHubData('https://api.github.com/search/repositories' + parameters);
   });
 });
