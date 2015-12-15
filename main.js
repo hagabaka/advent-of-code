@@ -99,5 +99,17 @@ requirejs(['config.js'], function() {
         });
       });
     });
+
+    require(['jquery'], function($) {
+      require(['visualnav'], function() {
+        $(function() {
+          $('nav').visualNav({
+            contentClass: 'chart',
+            selectedAppliedTo: 'a',
+            animationTime: 100
+          });
+        });
+      });
+    });
   });
 });

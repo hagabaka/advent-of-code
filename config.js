@@ -5,6 +5,8 @@ require.config({
     domready: "bower_components/domready/domReady",
     highcharts: "bower_components/highcharts/lib/highcharts",
     "highcharts-standalone": "bower_components/highcharts/lib/adapters/standalone-framework",
+    jquery: "bower_components/jquery/dist/jquery",
+    visualnav: "bower_components/visualnav/js/jquery.visualNav"
   },
   packages: [
 
@@ -31,7 +33,7 @@ require.config({
       exports: "Highcharts",
       deps: [
         "highcharts-standalone",
-        "highcharts-pie-titles",
+        "highcharts-pie-titles"
       ],
       init: function (standalone, pieTitles) {
         var Highcharts = this.Highcharts(standalone);
@@ -41,6 +43,7 @@ require.config({
     },
     "highcharts-standalone": {
       exports: "HighchartsAdapter"
-    }
+    },
+    visualNav: ['jquery']
   }
 });
