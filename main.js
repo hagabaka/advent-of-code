@@ -7,7 +7,7 @@ requirejs(['config.js'], function() {
           type: 'bar'
         },
         title: {text: 'Completion Times'},
-        subtitle: {text: 'Durations between midnight and listed times'},
+        subtitle: {text: 'Durations between midnight and times listed on leaderboard'},
         tooltip: {
           formatter: function() {
             var totalSeconds = this.y / 1000;
@@ -53,7 +53,7 @@ requirejs(['config.js'], function() {
           type: 'pie'
         },
         title: {text: 'Profile Websites'},
-        subtitle: {text: 'Websites users chose to link to as their profiles'},
+        subtitle: {text: 'Numbers of leaderboard entries whose profile links are on each domain'},
         legend: {enabled: true}
       }, function(domainChart) {
         return fetchDomainData.then(function(data) {
@@ -80,7 +80,7 @@ requirejs(['config.js'], function() {
         },
         title: {text: 'Used Languages'},
         subtitle: {
-          text: 'Based on ' + anchorText + ' of "advent" repositories under listed users',
+          text: 'Based on ' + anchorText + ' of "advent" repositories owned by users listed on the leaderboard',
           useHTML: true
         },
       }, function(languageChart) {
