@@ -1,5 +1,13 @@
 define(['fetchData', 'tabulator'], function(fetchData, Tabulator) {
   var noWebsiteText = 'No Website Listed';
+  var colors = {
+    // source: http://brandcolors.net/
+    'github.com': '#333333',
+    'plus.google.com': '#dc4e41',
+    'www.reddit.com': '#ff4500',
+    'twitter.com': '#55acee',
+  };
+  colors[noWebsiteText] = '#eeeeee';
   function makeDomainData(tabulator) {
     return tabulator.names().map(function(domain) {
       var label = domain;
@@ -8,7 +16,8 @@ define(['fetchData', 'tabulator'], function(fetchData, Tabulator) {
       }
       return {
         name: label,
-        y: tabulator.get(domain)
+        y: tabulator.get(domain),
+        color: colors[domain]
       };
     });
   }
