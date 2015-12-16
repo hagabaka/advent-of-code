@@ -20,7 +20,6 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
         }
       });
     });
-    console.log(githubUsers.names().length);
 
     var parameters = '?q=advent' + githubUsers.names().map(function(user) {
       return '+user:' + user;
