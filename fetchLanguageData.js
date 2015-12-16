@@ -7,7 +7,7 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
   var maxUsers = 98;
   return fetchData.then(function(days) {
     var githubUsers = new Tabulator();
-    days.forEach(function(day) {
+    days.slice().reverse().forEach(function(day) {
       day.entries.forEach(function(entry) {
         if(githubUsers.names().length >= maxUsers) {
           return;
