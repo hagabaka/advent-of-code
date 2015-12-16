@@ -16,7 +16,10 @@ define([], function() {
     }
   };
   Tabulator.prototype.names = function() {
-    return Object.keys(this.counts);
+    var self = this;
+    return Object.keys(this.counts).sort(function(a, b) {
+      return self.get(b) - self.get(a);
+    });
   };
   return Tabulator;
 });
