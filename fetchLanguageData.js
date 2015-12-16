@@ -52,7 +52,6 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
         } else {
           var sourceUrl = 'https://github.com/search/' + parameters;
           return fetchColors.then(function(colors) {
-            console.log(colors);
             return {
               sourceUrl: sourceUrl,
               label: [days[0].date, days[days.length - 1].date].join(' - '),
