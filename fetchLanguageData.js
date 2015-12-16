@@ -1,4 +1,9 @@
 define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator) {
+  var fetchColors = fetch(
+    'bower_components/github-colors/colors.json'
+  ).then(function(response) {
+    return response.json();
+  });
   return fetchData.then(function(days) {
     var githubUsers = new Tabulator();
     days.forEach(function(day) {
@@ -42,16 +47,20 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
           return fetchGitHubData(urlQueue.shift());
         } else {
           var sourceUrl = 'https://github.com/search/' + parameters;
-          return {
-            sourceUrl: sourceUrl,
-            label: [days[0].date, days[days.length - 1].date].join(' - '),
-            data: languageCounts.names().map(function(language) {
-              return {
-                name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
-                y: languageCounts.get(language)
-              };
-            })
-          };
+          return fetchColors.then(function(colors) {
+            console.log(colors);
+            return {
+              sourceUrl: sourceUrl,
+              label: [days[0].date, days[days.length - 1].date].join(' - '),
+              data: languageCounts.names().map(function(language) {
+                return {
+                  name: '<a href="' + sourceUrl + '+language:' + language + '">' + language + '</a>',
+                  y: languageCounts.get(language),
+                  color: colors[language].color
+                };
+              })
+            };
+          });
         }
       });
     }

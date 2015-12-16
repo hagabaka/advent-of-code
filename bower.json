@@ -21,6 +21,7 @@
     "highcharts": "~4.1.10",
     "requirejs": "~2.1.22",
     "visualnav": "visualNav#~2.5.2",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "github-colors": "ozh/github-colors"
   }
 }
