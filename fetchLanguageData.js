@@ -4,10 +4,14 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
   ).then(function(response) {
     return response.json();
   });
+  var maxUsers = 98;
   return fetchData.then(function(days) {
     var githubUsers = new Tabulator();
     days.forEach(function(day) {
       day.entries.forEach(function(entry) {
+        if(githubUsers.names().length >= maxUsers) {
+          return;
+        }
         if(entry.url) {
           var match = /github\.com\/([^\/]+)/.exec(entry.url);
           if(match) {
@@ -16,7 +20,8 @@ define(['fetchData', 'fetch', 'tabulator'], function(fetchData, fetch, Tabulator
         }
       });
     });
- 
+    console.log(githubUsers.names().length);
+
     var parameters = '?q=advent' + githubUsers.names().map(function(user) {
       return '+user:' + user;
     }).join('');
