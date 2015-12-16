@@ -1,13 +1,12 @@
 require 'ostruct'
-aunts = []
-data = DATA.read.scan(/(\d+): ([a-z]+): (\d+), ([a-z]+): (\d+), ([a-z]+): (\d+)$/).map do
+aunts = DATA.read.scan(/(\d+): ([a-z]+): (\d+), ([a-z]+): (\d+), ([a-z]+): (\d+)$/).map do
   |number, *pairs|
   aunt = OpenStruct.new
   aunt.number = number
   pairs.each_slice(2) do |attr, value|
     aunt[attr.to_s] = Integer(value)
   end
-  aunts << aunt
+  aunt
 end
 
 require 'yaml'
@@ -24,14 +23,13 @@ cars: 2
 perfumes: 1
 EOF
 
-Infinity = 1/0.0
-[:cats, :trees].each {|name| criteria[name.to_s] = (criteria[name.to_s] + 1) .. Infinity}
+[:cats, :trees].each {|name| criteria[name.to_s] = (criteria[name.to_s] + 1) .. Float::INFINITY}
 [:pomeranians, :goldfish].each {|name| criteria[name.to_s] = 0 ... (criteria[name.to_s] - 1)}
 
 answer = aunts.find do |aunt|
-  criteria.each_pair.all? {|attr, value|
+  criteria.each_pair.all? do |attr, value|
     !aunt[attr.to_s] || value === aunt[attr.to_s]
-  }
+  end
 end.number
 puts answer
 __END__
