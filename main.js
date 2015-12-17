@@ -96,11 +96,14 @@ requirejs(['config.js'], function() {
           title: {
             text: 'Time from midnight to completion'
           },
+          labels: {format: '{value:%M:%S}'},
           units: [['second', [120]]],
           showFirstLabel: false
         }, {
           type: 'datetime',
           showFirstLabel: false,
+          labels: {format: '{value:%M:%S}'},
+          units: [['second', [120]]],
           linkedTo: 0,
           opposite: true,
           title: {enabled: false}
