@@ -74,12 +74,14 @@ requirejs(['config.js'], function() {
           reversed: true
         },
         tooltip: {
-          formatter: function() {
+          pointFormatter: function() {
             var totalSeconds = this.y / 1000;
             var seconds = totalSeconds % 60;
             var totalMinutes = (totalSeconds - seconds) / 60;
             var minutes = totalMinutes % 60;
-            return this.x + ' (' + this.series.name + '): <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>'; 
+            return '<span style="color:' + this.series.color + '">\u25CF</span> ' +
+              this.series.name +
+              ': <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>';
           },
           followPointer: true
         },
