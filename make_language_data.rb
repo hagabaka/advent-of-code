@@ -63,7 +63,7 @@ github_usernames.each_slice(MAX_USER_PER_REQUEST) do |usernames|
 end
 
 colors = JSON.parse(File.read('bower_components/github-colors/colors.json'))
-source_url = "https://github.com/search/repositories?q=advent#{user_parameters(github_usernames)}"
+source_url = "https://github.com/search?q=advent#{user_parameters(github_usernames)}"
 language_data = {
   sourceUrl: source_url, 
   label: "#{data.first['date']} - #{data.last['date']}",
