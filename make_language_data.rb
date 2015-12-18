@@ -24,7 +24,9 @@ def fetch_github_data(url)
 
     body = response.read
     JSON.parse(body)['items'].each do |repo|
-      @language_counts[repo['language']] += 1
+      if language = repo['language']
+        @language_counts[language] += 1
+      end
     end
 
     unless @url_queue.empty?
@@ -68,11 +70,14 @@ language_data = {
   sourceUrl: source_url, 
   label: "#{data.first['date']} - #{data.last['date']}",
   data: @language_counts.each_pair.sort_by {|(_, count)| -count}.map do |(language, count)|
-    {
+    data = {
       name: "<a href='#{source_url}+language:#{language}'>#{language}</a>",
       y: count,
-      color: colors[language]['color']
     }
+    if language_color = colors[language]
+      data[:color] = language_color['color']
+    end
+    data
   end
 }
 
