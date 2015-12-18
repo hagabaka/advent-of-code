@@ -66,12 +66,13 @@ end
 
 colors = JSON.parse(File.read('bower_components/github-colors/colors.json'))
 source_url = "https://github.com/search?q=advent#{user_parameters(github_usernames)}"
+require 'erb'
 language_data = {
   sourceUrl: source_url, 
   label: "#{data.first['date']} - #{data.last['date']}",
   data: @language_counts.each_pair.sort_by {|(_, count)| -count}.map do |(language, count)|
     data = {
-      name: "<a href='#{source_url}+language:#{language}'>#{language}</a>",
+      name: "<a href='#{source_url}+language:#{ERB::Util.url_encode(language)}'>#{language}</a>",
       y: count,
     }
     if language_color = colors[language]
