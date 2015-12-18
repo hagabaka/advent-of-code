@@ -60,41 +60,68 @@ requirejs(['config.js'], function() {
           renderTo: 'time-chart',
           type: 'bar'
         },
-        title: {text: 'Completion Times'},
-        subtitle: {text: 'Durations between midnight and times listed on leaderboard'},
+        title: {
+          text: 'Completion Times',
+          y: 10,
+        },
+        subtitle: {
+          text: 'Durations between midnight and times listed on leaderboard',
+          y: 40,
+        },
+        legend: {
+          verticalAlign: 'top',
+          y: 50,
+          reversed: true
+        },
         tooltip: {
-          formatter: function() {
+          pointFormatter: function() {
             var totalSeconds = this.y / 1000;
             var seconds = totalSeconds % 60;
             var totalMinutes = (totalSeconds - seconds) / 60;
             var minutes = totalMinutes % 60;
-            return this.x + ' (' + this.series.name + '): <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>'; 
+            return '<span style="color:' + this.series.color + '">\u25CF</span> ' +
+              this.series.name +
+              ': <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>';
           },
           followPointer: true
         },
         xAxis: {
           type: 'categories',
           labels: {useHTML: true},
-          id: 'xAxis'
+          id: 'xAxis',
+          gridLineWidth: 1
         },
-        yAxis: {
+        yAxis: [{
           type: 'datetime',
           title: {
             text: 'Time from midnight to completion'
           },
+          labels: {format: '{value:%M:%S}'},
           units: [['second', [120]]],
           showFirstLabel: false
-        },
-        data: {dateFormat: 'mm:ss'}
+        }, {
+          type: 'datetime',
+          showFirstLabel: false,
+          labels: {format: '{value:%M:%S}'},
+          units: [['second', [120]]],
+          linkedTo: 0,
+          opposite: true,
+          title: {enabled: false}
+        }],
+        data: {dateFormat: 'mm:ss'},
       }, function(timeChart) {
         return fetchTimeData.then(function(data) {
           data.forEach(function(day) {
             timeChart.addSeries({
               name: day.date,
               data: day.times,
+              borderWidth: 0
             });
           });
-          timeChart.get('xAxis').setCategories(data[0].labels);
+          var labels = data[0].labels;
+          timeChart.get('xAxis').setCategories(labels);
+          document.getElementById('time-chart').style.height = (3 * labels.length) + 'ex';
+          timeChart.reflow();
           timeChart.hideLoading();
         });
       });
