@@ -79,9 +79,11 @@ requirejs(['config.js'], function() {
             var seconds = totalSeconds % 60;
             var totalMinutes = (totalSeconds - seconds) / 60;
             var minutes = totalMinutes % 60;
+            var hours = (totalMinutes - minutes) / 60;
             return '<span style="color:' + this.series.color + '">\u25CF</span> ' +
-              this.series.name +
-              ': <strong>' + minutes + ' minutes ' + seconds + ' seconds</strong>';
+              this.series.name + ': <strong>' +
+              (hours > 0 ? hours + ' hours ' : '') +
+              minutes + ' minutes ' + seconds + ' seconds</strong>';
           },
           followPointer: true
         },
@@ -96,14 +98,14 @@ requirejs(['config.js'], function() {
           title: {
             text: 'Time from midnight to completion'
           },
-          labels: {format: '{value:%M:%S}'},
-          units: [['second', [120]]],
+          //labels: {format: '{value:%M:%S}'},
+          units: [['second', [1200]]],
           showFirstLabel: false
         }, {
           type: 'datetime',
           showFirstLabel: false,
-          labels: {format: '{value:%M:%S}'},
-          units: [['second', [120]]],
+          //labels: {format: '{value:%M:%S}'},
+          units: [['second', [1200]]],
           linkedTo: 0,
           opposite: true,
           title: {enabled: false}
