@@ -6,15 +6,15 @@ MAX_REQUESTS_PER_MINUTE = 5
 @requests_sent = 0
 
 def fetch_github_data(url)
+  if @requests_sent >= MAX_REQUESTS_PER_MINUTE
+    puts "Sleeping for a minute"
+    sleep 61 
+    @requests_sent = 0
+  end 
+
   puts "Fetching #{url}"
   open(url, {'User-Agent' => 'hagabaka/advent-of-code'}) do |response|
     @requests_sent += 1
-    if @requests_sent >= MAX_REQUESTS_PER_MINUTE
-      puts "Sleeping for a minute"
-      sleep 61 
-      @requests_sent = 0
-    end 
-
     links = response.meta['link']
     if links
       if next_page = links[/<([^>]+)>; rel="next"/, 1]
